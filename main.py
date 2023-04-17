@@ -1,13 +1,9 @@
 from PIL import ImageGrab
-import keyboard,datetime,os,pyautogui
-from PyQt5.QtCore import Qt, QPoint
-from PyQt5.QtGui import QPixmap, QImage, QPainter
-from PyQt5.QtWidgets import QWidget, QApplication
+import keyboard,datetime,os
 
-# 监听按键
-
-def screenshot():os.system("glogal.py")
-keyboard.add_hotkey('f1', screenshot)
+def scs():
+ ImageGrab.grab().save(os.path.join(os.path.dirname(os.path.abspath(__file__)),datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")+".png"))
+keyboard.add_hotkey('f1',scs)
 
 def area():os.system("area.py")
 keyboard.add_hotkey('f2', area)
@@ -19,33 +15,4 @@ def colora():os.system("Colora.exe")
 keyboard.add_hotkey('f4', colora)
 
 keyboard.wait()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

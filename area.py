@@ -1,7 +1,7 @@
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
-import keyboard,datetime,os,pyautogui
+import keyboard,datetime,os
 
 
 class MyWidget(QWidget):

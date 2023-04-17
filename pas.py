@@ -1,5 +1,5 @@
 from PIL import ImageGrab
-import keyboard,datetime,os,pyautogui
+import keyboard,datetime,os
 from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtGui import QPixmap, QImage, QPainter
 from PyQt5.QtWidgets import QWidget, QApplication
