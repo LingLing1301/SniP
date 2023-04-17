@@ -13,7 +13,7 @@ class MyWidget(QWidget):
         self.setAttribute(Qt.WA_TranslucentBackground, True)
 
         # 加载并缩放图片
-        self.image = QImage(r"C:\Users\Administrator\Desktop\screenshot.png")
+        self.image = QImage(os.path.dirname(os.path.abspath(__file__))+"\\screenshot.png")
         self.scale_factor = 1.0  # 缩放因子
         self.scaled_image = self.image.scaled(
             int(self.image.width() * self.scale_factor),

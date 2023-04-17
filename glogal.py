@@ -9,7 +9,7 @@ screenshot = ImageGrab.grab()
 
 # 生成文件名
 now = datetime.datetime.now()
-desktop = os.path.expanduser("~/Desktop")
+desktop = os.path.dirname(os.path.abspath(__file__))
 file_name = "screenshot_" + now.strftime("%Y-%m-%d_%H-%M-%S") + ".png"
 file_path = os.path.join(desktop, file_name)
 

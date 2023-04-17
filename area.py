@@ -1,7 +1,7 @@
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
-import datetime
+import keyboard,datetime,os,pyautogui
 
 
 class MyWidget(QWidget):
@@ -55,7 +55,7 @@ class MyWidget(QWidget):
             )
             dt = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
             filename = f"截图{dt}.png"
-            pixmap.save(f"C:\\Users\\Administrator\\Desktop\\{filename}")
+            pixmap.save(os.path.dirname(os.path.abspath(__file__))+f"\\{filename}")
             QApplication.quit()
 
     def mousePressEvent(self, event):
