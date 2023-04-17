@@ -15,6 +15,9 @@ keyboard.add_hotkey('f2', area)
 def pas():os.system("pas.py")
 keyboard.add_hotkey('f3', pas)
 
+def colora():os.system("Colora.exe")
+keyboard.add_hotkey('f4', colora)
+
 keyboard.wait()
 
 
